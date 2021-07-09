@@ -1,3 +1,5 @@
+[![OSSAR](https://github.com/parulgarg123/portfolio/actions/workflows/ossar-analysis.yml/badge.svg?branch=master)](https://github.com/parulgarg123/portfolio/actions/workflows/ossar-analysis.yml)
+
 # Portfolio
 Personal Portfolio like a terminal
 
