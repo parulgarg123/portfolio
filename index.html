@@ -3,24 +3,20 @@
 
 <head>
     <!--content tpe : HTML -->
-    <meta http-equiv="content-type"
-          content="text/html; charset=UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 
     <!-- Making viewport responsive -->
-    <meta name="viewport" content=
-            "width=device-width,minimum-scale=1,
-		initial-scale=1">
+    <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport">
 
     <!-- Loading jQuery, jQuery.terminal,
         and style sheet -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
-    </script>
-
-    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script src="constants.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
-    <script src="constants.js"></script>
+
+    <title>Portfolio - Parul Garg</title>
     <!--    To Change the color of terminal-->
     <!--    <style type="text/css">-->
     <!--        .terminal,span,.cmd,div {-->
@@ -34,26 +30,43 @@
 
 <body>
 <script>
+    const getCommands = () => {
+        const commands = constants.WHITELISTED_COMMANDS;
+        let result = '';
+        for (let i = 0; i < commands.length; i++) {
+            result = result + "  > " + commands[i] + "\n";
+        }
+        return result;
+    };
+
     $('body').terminal({
-            iam: function (name) {
+            iam(name) {
                 this.echo('Hello, ' + name +
                     '. Welcome to the Den');
             },
-            help: function () {
-                this.echo(constants.help);
+            help() {
+                this.echo(constants.HELP + getCommands());
             },
-            projects: function () {
-                this.echo(constants.projects);
+            projects() {
+                this.echo(constants.PROJECTS);
             },
-            project: function () {
-                this.echo(constants.projects);
+            education() {
+                this.echo(constants.EDUCATION);
             },
+            details() {
+                this.echo(constants.DETAILS);
+            },
+            intro() {
+                this.echo(constants.INTRODUCTION);
+                ``
+            },
+            contact() {
+                this.echo(constants.CONSTANT_DETAILS);
+            }
         },
         {
             greetings: constants.GREETINGS,
         });
 </script>
-
 </body>
-
 </html>
