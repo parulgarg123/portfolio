@@ -10,6 +10,8 @@ Developers don't need UI we are okay with 90' cli, so here's my portfolio aka Re
 ## Web Link
 Go to URL: https://parulgarg123.github.io/portfolio/
 
+Tiny URL : https://tinyurl.com/parulgargcv
+
 ### Liked my Project?
 If you like that Buy me a coffee
 
