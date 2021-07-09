@@ -12,7 +12,7 @@
         and style sheet -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <script src="constants.js"></script>
+    <script src="Data/constants.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
 
@@ -28,8 +28,27 @@
     <!--    </style>-->
 </head>
 
-<body>
+<body style="width: 100%;">
 <script>
+    const getProjects = () => {
+        const projects = constants.Projects;
+        let result = '';
+        for (let i = 0; i < projects.length; i++) {
+            result = result + (i + 1) + ". " +
+                "Title : " + projects[i].Title + "\n" +
+                "   Tech Used : " + projects[i].TechUsed + "\n" +
+                "   Brief Description : " + projects[i].BriefDescription + "\n\n"
+        }
+        return result;
+    }
+
+    const getEducationDetails = () => {
+        const education = constants.EDUCATION;
+        let result = '';
+
+        return result;
+    }
+
     const getCommands = () => {
         const commands = constants.WHITELISTED_COMMANDS;
         let result = '';
@@ -48,7 +67,7 @@
                 this.echo(constants.HELP + getCommands());
             },
             projects() {
-                this.echo(constants.PROJECTS);
+                this.echo(getProjects());
             },
             education() {
                 this.echo(constants.EDUCATION);
