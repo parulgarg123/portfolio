@@ -1,4 +1,5 @@
 [![OSSAR](https://github.com/parulgarg123/portfolio/actions/workflows/ossar-analysis.yml/badge.svg?branch=master)](https://github.com/parulgarg123/portfolio/actions/workflows/ossar-analysis.yml)
+[![CodeQL](https://github.com/parulgarg123/portfolio/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/parulgarg123/portfolio/actions/workflows/codeql-analysis.yml)
 
 # Portfolio
 Personal Portfolio like a terminal
