@@ -1,9 +1,10 @@
 const constants = {
     HELP: 'Currently we support below mentioned commands, Please use without brackets, Also we provided the short alias if you do typo mistakes like me. 😅 ' +
         'Try education and edu. \n',
-    GREETINGS: 'Welcome into the world of Parul Garg \nTry hitting help command.\n',
 
-    INTRODUCTION: 'Software Developer having 3+ years of experience in Product development, Data Science, building new tools using Open Source Tech, CI/CD Pipelines. Created multiple automated Products based on Machine Learning. Deployed multiple machine learning models in production. Awarded with Futuristic Award by CISO- Wipro for developing S.I.E.M(Security Information and Event Management) Tool based using Open Source.',
+    GREETINGS: 'Welcome Stranger, My Name is Parul Garg, a Software Development Engineer. \nTry help command for get started to know my professional Details.\n',
+
+    INTRODUCTION: 'Software Developer having 3+ years of experience in Product development, Data Science, building new tools using Open Source Tech, CI/CD Pipelines. Created multiple automated Products based on Machine Learning. Deployed multiple machine learning models in production. Awarded with Futuristic Award by CISO- Wipro for developing S.I.E.M(Security Information and Event Management) Tool based using Open Source.\n',
 
     CONTACT_DETAILS: 'Contact Details:' +
         '\n > Phone Number : +91-99151-78377' +
@@ -108,7 +109,7 @@ const constants = {
         {
             'Title': "Project Engineer",
             'Organization': 'WIPRO Ltd.',
-            'Description': 'Under Cyber Defense working in the Big Data team. Resp-onsible for developing Machine learning-based Automations.',
+            'Description': 'Under Cyber Defense working in the Big Data team. Responsible for developing Machine learning-based Automations.',
             'Responsibilities': 'System Design(45%), Code implementation(50%), Mentoring SDE/Interns(5%)',
             'TimeLines': 'May 18 - June 2019'
         }
@@ -124,6 +125,30 @@ const constants = {
         'Elastic Search, Logstash, Kibana ELK.',
         'Participation of Ethical Hacking - a workshop held in IIT Delhi organized by Robosapiens.',
     ],
+
+    TECH: [
+        'Python, Java, Rest API, Django, DynamoDB, SQL, Mysql, MongoDB, S3, CloudWatch, Step Function, Kinesis, SQS, CI/CD.',
+        'AWS, AWS Sage Maker, ELK (Elastic Search, Logstash and Kibana), Power BI, Grafana, Tableau.',
+        'Deep Learning, Transfer Learning, Data Driven Engineering, Software Design, Test Automations, Software Development Life Cycle, Event driven Architecture.'
+    ],
+
+    INTERNSHIP: [
+        {
+            'Title': "Software Engineer - Intern",
+            'Organization': 'RV Technologies',
+            'Description': 'Part of a team that is responsible for Developing a Web Application name Estate Hub using Asp .net MVC which helps Clients to find the appropriate property in a particular region to buy or rent it.',
+            'TimeLines': 'Jan 17 - May 2017',
+            'TechStack': 'ASP .Net',
+        },
+        {
+            'Title': "Software Engineer - Intern",
+            'Organization': 'CS-SOFT Solutions',
+            'Description': 'Developed a Web Application that automates the college functionalities like Fees, Attendance Management and many more.',
+            'TimeLines': 'May 16 - July 2016',
+            'TechStack': 'ASP .Net',
+        }
+    ],
+
 
     WHITELISTED_COMMANDS: [
         'intro - (Some Introduction)',
