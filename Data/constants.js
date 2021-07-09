@@ -67,6 +67,8 @@ const constants = {
         }
     ],
 
+    CV: "https://drive.google.com/file/d/1Jh8ItOlSB92WR-LY7UY_clppblLRZ7O_/view?usp=sharing",
+
     EDUCATION: [
         {
             'Course': 'B.Tech - Graduation',
@@ -159,6 +161,7 @@ const constants = {
         'contact / info - (How you can contact me)',
         'certifications / cert - (Some Professional certification while on journey of professionalism)',
         'internships / intern - (School Internships)',
+        'resume - (Download CV in PDF form)',
         'clear - (Clear the screen)',
     ],
 };
