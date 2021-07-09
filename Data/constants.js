@@ -1,5 +1,6 @@
 const constants = {
-    HELP: 'Currently we support below mentioned commands, Please use without brackets: \n',
+    HELP: 'Currently we support below mentioned commands, Please use without brackets, Also we provided the short alias if you do typo mistakes like me. 😅 ' +
+        'Try education and edu. \n',
     GREETINGS: 'Welcome into the world of Parul Garg \nTry hitting help command.\n',
 
     INTRODUCTION: 'Software Developer having 3+ years of experience in Product development, Data Science, building new tools using Open Source Tech, CI/CD Pipelines. Created multiple automated Products based on Machine Learning. Deployed multiple machine learning models in production. Awarded with Futuristic Award by CISO- Wipro for developing S.I.E.M(Security Information and Event Management) Tool based using Open Source.',
@@ -9,7 +10,8 @@ const constants = {
         '\n > email : parulg014@gmail.com' +
         '\n > linkedin : https://www.linkedin.com/in/parul-garg-4b0670113/' +
         '\n > Github : https://github.com/parulgarg123/' +
-        '\n > Need to contact/Feedback : https://forms.gle/T5nfHDPjcKCxsNzb7',
+        '\n > Need to contact/Feedback : https://forms.gle/T5nfHDPjcKCxsNzb7' +
+        '\n',
 
     Projects: [
         {
@@ -125,13 +127,13 @@ const constants = {
 
     WHITELISTED_COMMANDS: [
         'intro - (Some Introduction)',
-        'education - (What I did which lands to the professional path)',
-        'experience - (Professional Experience)',
+        'education / edu - (What I did which lands to the professional path)',
+        'experience / exp - (Professional Experience)',
         'tech - (Tech Proficiency)',
-        'projects - (Professional/Industry level Projects)',
-        'contact - (How you can contact me)',
-        'certifications - (Some Professional certification while on journey of professionalism)',
-        'internships - (School Internships)',
+        'projects / proj - (Professional/Industry level Projects)',
+        'contact / info - (How you can contact me)',
+        'certifications / cert - (Some Professional certification while on journey of professionalism)',
+        'internships / intern - (School Internships)',
         'clear - (Clear the screen)',
     ],
 };
