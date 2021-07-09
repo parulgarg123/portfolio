@@ -2,14 +2,8 @@
 <html lang="en">
 
 <head>
-    <!--content tpe : HTML -->
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-
-    <!-- Making viewport responsive -->
     <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport">
-
-    <!-- Loading jQuery, jQuery.terminal,
-        and style sheet -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
     <script src="Data/constants.js"></script>
@@ -17,52 +11,60 @@
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
 
     <title>Portfolio - Parul Garg</title>
-    <!--    To Change the color of terminal-->
-    <!--    <style type="text/css">-->
-    <!--        .terminal,span,.cmd,div {-->
-    <!--            &#45;&#45;color: rgba(0, 128, 0, 0.99);-->
-    <!--        }-->
-    <!--        .terminal, span {-->
-    <!--            &#45;&#45;size: 1.4;-->
-    <!--        }-->
-    <!--    </style>-->
 </head>
 
 <body style="width: 100%;">
 <script>
+
     const getProjects = () => {
-        const projects = constants.Projects;
-        let result = '';
-        for (let i = 0; i < projects.length; i++) {
-            result = result + (i + 1) + ". " +
-                "Title : " + projects[i].Title + "\n" +
-                "   Tech Used : " + projects[i].TechUsed + "\n" +
-                "   Brief Description : " + projects[i].BriefDescription + "\n\n"
+            const projects = constants.Projects;
+            let result = '';
+            for (let i = 0; i < projects.length; i++) {
+                result = result + (i + 1) + ". " +
+                    "Title : " + projects[i].Title + "\n" +
+                    "   Tech Used : " + projects[i].TechUsed + "\n" +
+                    "   Brief Description : " + projects[i].BriefDescription + "\n\n"
+            }
+            return result;
+        }, getEducationDetails = () => {
+            const education = constants.EDUCATION;
+            let result = '';
+            for (let i = 0; i < education.length; i++) {
+                result = result + (i + 1) + ". " +
+                    "Course : " + education[i].Course + "   Year : " + education[i].Year + "\n" +
+                    "   Institution : " + education[i].School + "\n" +
+                    "   Board : " + education[i].Board + "\n" +
+                    "   Percentage : " + education[i].Percentage + "\n\n"
+            }
+            return result;
+        }, getExperienceDetails = () => {
+            const experience = constants.EXPERIENCE;
+            let result = '';
+            for (let i = 0; i < experience.length; i++) {
+                result = result + (i + 1) + ". " +
+                    "Title : " + experience[i].Title + " @ " + experience[i].Organization + "   From : " + experience[i].TimeLines + '\n' +
+                    "   Description : " + experience[i].Description + "\n" +
+                    "   Responsibilities : " + experience[i].Responsibilities + "\n\n"
+            }
+            return result;
+        }, getCommands = () => {
+            const commands = constants.WHITELISTED_COMMANDS;
+            let result = '';
+            for (let i = 0; i < commands.length; i++) {
+                result = result + "  * " + commands[i] + "\n";
+            }
+            return result;
+        }, getCertification = () => {
+            const certifications = constants.CERTIFICATIONS;
+            let result = '';
+            for (let i = 0; i < certifications.length; i++) {
+                result = result + "  * " + certifications[i] + "\n";
+            }
+            return result;
         }
-        return result;
-    }
-
-    const getEducationDetails = () => {
-        const education = constants.EDUCATION;
-        let result = '';
-
-        return result;
-    }
-
-    const getCommands = () => {
-        const commands = constants.WHITELISTED_COMMANDS;
-        let result = '';
-        for (let i = 0; i < commands.length; i++) {
-            result = result + "  > " + commands[i] + "\n";
-        }
-        return result;
-    };
+    ;
 
     $('body').terminal({
-            iam(name) {
-                this.echo('Hello, ' + name +
-                    '. Welcome to the Den');
-            },
             help() {
                 this.echo(constants.HELP + getCommands());
             },
@@ -70,16 +72,25 @@
                 this.echo(getProjects());
             },
             education() {
-                this.echo(constants.EDUCATION);
+                this.echo(getEducationDetails);
             },
-            details() {
-                this.echo(constants.DETAILS);
+            experience() {
+                this.echo(getExperienceDetails());
             },
             intro() {
                 this.echo(constants.INTRODUCTION);
             },
             contact() {
-                this.echo(constants.CONSTANT_DETAILS);
+                this.echo(constants.CONTACT_DETAILS);
+            },
+            tech() {
+
+            },
+            certifications() {
+                this.echo(getCertification());
+            },
+            internships() {
+
             }
         },
         {
