@@ -78,15 +78,23 @@ border-color:lightgray;
         </td>
     </tr>
 </table>
+<div style="color: #aaa;font-family: monospace;">
+    Profile Visits: <img
+        Alt="web counter"
+        border="0"
+        src="https://hitwebcounter.com/counter/counter.php?page=7836541&style=0007&nbdigits=5&type=page&initCount=0"
+        title="Free Counter"/>
+</div>
+
 
 <script>
 
     const getProjects = () => {
-            const projects = constants.Projects;
-            let result = '';
-            for (let i = 0; i < projects.length; i++) {
-                result = result + (i + 1) + ". " +
-                    "Title : " + projects[i].Title + "\n" +
+        const projects = constants.Projects;
+        let result = '';
+        for (let i = 0; i < projects.length; i++) {
+            result = result + (i + 1) + ". " +
+                "Title : " + projects[i].Title + "\n" +
                     "   Tech Used : " + projects[i].TechUsed + "\n" +
                     "   Brief Description : " + projects[i].BriefDescription + "\n"
             }
