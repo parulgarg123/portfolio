@@ -1,10 +1,10 @@
 # Portfolio
 Personal Portfolio like a terminal
 
-##Motivation
+## Motivation
 Developers don't need UI we are okay with 90' cli, so here's my portfolio aka Resume.
 
-##Web Link
+## Web Link
 Go to URL: https://parulgarg123.github.io/portfolio/
 
 ### Liked my Project?
