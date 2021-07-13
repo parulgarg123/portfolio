@@ -2,10 +2,11 @@
 [![CodeQL](https://github.com/parulgarg123/portfolio/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/parulgarg123/portfolio/actions/workflows/codeql-analysis.yml)
 
 # Portfolio
-Personal Portfolio like a terminal
+Long story short Personal Portfolio aka resume inside terminal.
 
 ## Motivation
-Developers don't need UI we are okay with 90' cli, so here's my portfolio aka Resume.
+Developers don't need UI we are okay with 90' cli, so here's my portfolio.
+
 
 ## Web Link
 Go to URL: https://parulgarg123.github.io/portfolio/
