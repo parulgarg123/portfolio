@@ -16,6 +16,6 @@ Tiny URL : https://tinyurl.com/parulgargcv
 Contact Me @ parulg014@gmail.com
 
 ### Liked my Project?
-If you like that Buy me a coffee
+If you like that Buy me a coffee.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/parulgarg)
