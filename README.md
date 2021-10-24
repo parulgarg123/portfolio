@@ -13,6 +13,8 @@ Go to URL: https://parulgarg123.github.io/portfolio/
 
 Tiny URL : https://tinyurl.com/parulgargcv
 
+Contact Me @ parulg014@gmail.com
+
 ### Liked my Project?
 If you like that Buy me a coffee
 
